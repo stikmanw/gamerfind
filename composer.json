@@ -1,0 +1,19 @@
+{
+    "name": "gamerfind",
+    "require": {
+        "php": ">=5.3",
+        "silex/silex": "~1.2",
+        "symfony/debug": "~2.6",
+        "silex/web-profiler": "~1.0",
+        "symfony/monolog-bridge": "~2.6",
+        "symfony/twig-bridge": "~2.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.5"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    }
+}
