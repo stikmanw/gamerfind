@@ -8,9 +8,9 @@
         {% block head %}
             <title>Title</title>
             <meta name="description" content="">
-            <link rel="stylesheet" href="styles/main.css">
+            <link rel="stylesheet" href="assets/styles/main.css">
         {% endblock %}
-        <script src="scripts/vendor/modernizr.js"></script>
+        <script src="assets/scripts/vendor/modernizr.js"></script>
         <meta name="viewport" content="width=device-width">
     </head>
     <body>
@@ -21,13 +21,13 @@
         <div id="content">{% block content %}{% endblock %}</div>
         <div id="footer">
             {% block footer %}
-                &copy; Copyright 2011 by <a href="http://domain.invalid/">you</a>.
+                &copy; Copyright 2011 by <a href="http://gamerfind.io/">you</a>.
             {% endblock %}
         </div>
         
         {% block scripts %}
-            <script src="scripts/vendor.js"></script>
-            <script src="scripts/app.js"></script>
+            <script src="assets/scripts/vendor.js"></script>
+            <script src="assets/scripts/app.js"></script>
         {% endblock %}
     </body>
 </html>

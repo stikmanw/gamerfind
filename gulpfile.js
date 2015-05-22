@@ -116,7 +116,7 @@ gulp.task('watch', ['bundle'], function () {
         // Note: this uses an unsigned certificate which on first access
         //       will present a certificate warning in the browser.
         // https: true,
-        proxy: "gamerfind.net"
+        proxy: "gamerfind.io"
     });
 
     gulp.watch('assets/scripts/**/*.js', ['scripts', reload]);
@@ -126,7 +126,7 @@ gulp.task('watch', ['bundle'], function () {
     gulp.watch('assets/scripts/**/*.json', ['json']);
 
     // Watch .html files
-    gulp.watch('src/AppBundle/Views/**/*.html.twig', reload);
+    gulp.watch('src/GamerFind/Views/**/*.html.twig', reload);
 
     gulp.watch(['assets/styles/**/*.scss', 'assets/styles/**/*.css'], ['styles', reload]);
 

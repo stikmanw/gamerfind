@@ -1,7 +1,8 @@
 <?php
-namespace AppBundle\Controller;
+namespace GamerFind\Controllers;
 
-use AppBundle\Controller;
+use GamerFind\Controller;
+use Symfony\Component\HttpFoundation\Response;
 
 class AuthController extends Controller
 {

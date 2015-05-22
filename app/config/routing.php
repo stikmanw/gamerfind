@@ -1,6 +1,6 @@
 <?php
 
-use AppBundle\Controllers\AuthController;
+use GamerFind\Controllers\AuthController;
 
 // Register Controllers and their dependencies
 $app['auth.controller'] = $app->share(function() use ($app) {
@@ -8,5 +8,10 @@ $app['auth.controller'] = $app->share(function() use ($app) {
 });
 
 // Register routes
-$app->get('/login', 'auth.controller:login');
-$app->get('/signup', 'auth.controller:signup');
+$app->get('/', function() use($app)  {
+       $controller = new AuthController($app['twig']);
+       return $controller->signup();
+});
+
+//$app->get('/login', 'auth.controller:login');
+//$app->get('/signup', 'auth.controller:signup');

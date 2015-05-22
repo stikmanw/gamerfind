@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle;
+namespace GamerFind;
 
 use Symfony\Component\HttpFoundation\Response;
 
