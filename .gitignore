@@ -5,4 +5,4 @@ vendor/
 .phpinte
 *.log
 *.idea
-app/cache*
+app/cache/*
